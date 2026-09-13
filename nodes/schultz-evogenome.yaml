@@ -1,0 +1,33 @@
+# The Schultz EvoGenome Lab node. Planned: the served view is public in the
+# repository below; the MCP endpoint is not deployed yet.
+name: schultz-evogenome
+maintainer: 0000-0003-1190-1122
+maintainer_name: Darrin T. Schultz
+organization: Schultz EvoGenome Lab, Lehigh University
+homepage: https://evogeno.me
+endpoint: null
+transport: null
+auth: public
+server: omnibus-node
+scope:
+  - Ctenophora
+  - Porifera
+  - Cnidaria
+  - Siphonophora
+  - chromosome evolution
+  - macrosynteny
+  - genome assembly
+  - bioluminescence
+  - single-cell genomics
+serves:
+  - open-access-papers
+  - preprints
+  - figures
+  - figure-assets
+  - notes
+  - code
+license_default: CC-BY-4.0
+bundle_doi: null
+repository: https://github.com/schultz-evogenome/schultz-corpus
+status: planned
+last_verified: 2026-09-13

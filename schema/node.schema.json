@@ -1,0 +1,202 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "description": "Registry name: lowercase letters, digits, hyphens. Unique.",
+      "title": "Name",
+      "type": "string"
+    },
+    "maintainer": {
+      "description": "ORCID of the person answering for this node.",
+      "title": "Maintainer",
+      "type": "string"
+    },
+    "maintainer_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Maintainer Name"
+    },
+    "organization": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Lab and institution.",
+      "title": "Organization"
+    },
+    "homepage": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Homepage"
+    },
+    "endpoint": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "The MCP endpoint. Null while the node is planned.",
+      "title": "Endpoint"
+    },
+    "transport": {
+      "anyOf": [
+        {
+          "enum": [
+            "streamable-http",
+            "sse"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Transport"
+    },
+    "auth": {
+      "default": "public",
+      "enum": [
+        "public",
+        "token"
+      ],
+      "title": "Auth",
+      "type": "string"
+    },
+    "server": {
+      "default": "omnibus-node",
+      "enum": [
+        "corpus",
+        "omnibus-node",
+        "other"
+      ],
+      "title": "Server",
+      "type": "string"
+    },
+    "scope": {
+      "description": "Taxa, topics, methods the node covers.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Scope",
+      "type": "array"
+    },
+    "serves": {
+      "items": {
+        "enum": [
+          "accepted-manuscripts",
+          "preprints",
+          "open-access-papers",
+          "theses",
+          "protocols",
+          "pipelines",
+          "negative-results",
+          "notes",
+          "figures",
+          "figure-assets",
+          "code",
+          "data",
+          "taxonomy"
+        ],
+        "type": "string"
+      },
+      "title": "Serves",
+      "type": "array"
+    },
+    "license_default": {
+      "enum": [
+        "CC-BY-4.0",
+        "CC-BY-SA-4.0",
+        "CC0-1.0",
+        "MIT",
+        "Apache-2.0",
+        "mixed"
+      ],
+      "title": "License Default",
+      "type": "string"
+    },
+    "bundle_doi": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Zenodo DOI of the archived bundle, so the node can be re-hosted.",
+      "title": "Bundle Doi"
+    },
+    "repository": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Public repository of the served view, when there is one.",
+      "title": "Repository"
+    },
+    "status": {
+      "default": "planned",
+      "enum": [
+        "planned",
+        "active",
+        "stale"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "last_verified": {
+      "format": "date",
+      "title": "Last Verified",
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "maintainer",
+    "license_default",
+    "last_verified"
+  ],
+  "title": "Omnibus node manifest",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/schultz-evogenome/omnibus/main/schema/node.schema.json"
+}

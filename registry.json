@@ -1,0 +1,40 @@
+{
+  "schema": "https://raw.githubusercontent.com/schultz-evogenome/omnibus/main/schema/node.schema.json",
+  "generated": "2026-09-13T03:56:28+00:00",
+  "generator": "omnibus-registry 0.1.0",
+  "nodes": [
+    {
+      "name": "schultz-evogenome",
+      "maintainer": "0000-0003-1190-1122",
+      "maintainer_name": "Darrin T. Schultz",
+      "organization": "Schultz EvoGenome Lab, Lehigh University",
+      "homepage": "https://evogeno.me/",
+      "auth": "public",
+      "server": "omnibus-node",
+      "scope": [
+        "Ctenophora",
+        "Porifera",
+        "Cnidaria",
+        "Siphonophora",
+        "chromosome evolution",
+        "macrosynteny",
+        "genome assembly",
+        "bioluminescence",
+        "single-cell genomics"
+      ],
+      "serves": [
+        "open-access-papers",
+        "preprints",
+        "figures",
+        "figure-assets",
+        "notes",
+        "code"
+      ],
+      "license_default": "CC-BY-4.0",
+      "repository": "https://github.com/schultz-evogenome/schultz-corpus",
+      "status": "planned",
+      "last_verified": "2026-09-13",
+      "first_registered": "2026-09-12"
+    }
+  ]
+}
