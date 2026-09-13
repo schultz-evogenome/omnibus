@@ -23,7 +23,7 @@ take down.
 ## Joining
 
 1. Run a node. The reference implementations are
-   [corpus](https://github.com/caseywdunn/corpus) for a literature corpuscle
+   [corpus](https://github.com/caseywdunn/corpus) for a literature corpus
    and [omnibus-node](https://github.com/schultz-evogenome/omnibus-node) for
    a lab's own work with sharing tiers. Either answers `bundle_info` or
    `node_info`.
@@ -68,7 +68,7 @@ there are nodes to route to.
 ## Status
 
 Registry seed. One node is registered, as planned; its served view is
-public in its repository. The Dunn lab's public corpuscles
+public in its repository. The Dunn lab's public Corpus servers
 (github.com/caseywdunn/corpus) are the natural second node. See the design
 brief for the roadmap and the open questions.
 

@@ -5,7 +5,7 @@ Community registry of lab knowledge servers, served over the Model Context Proto
 Read `docs/omnibus-design.md` before doing any work in this repo. It holds the design, the prior art to study, the rules on rights and attribution, and the roadmap.
 
 Conventions:
-- Build on corpus (github.com/caseywdunn/corpus). Use its vocabulary: corpuscle, bundle, `bundle_info`. Do not reinvent what it already does. The lab-side software lives in github.com/schultz-evogenome/omnibus-node; this repository is the registry only.
+- Build on corpus (github.com/caseywdunn/corpus). Where its vocabulary applies, use it: library, bundle, `bundle_info`. The whole thing a lab runs is a node. Do not reinvent what corpus already does. The lab-side software lives in github.com/schultz-evogenome/omnibus-node; this repository is the registry only.
 - Default closed. Nothing is served or committed that the contributor does not hold rights to.
 - Every entry carries who and when.
 - Propose layouts and schemas before writing code. Ask before adding dependencies.
